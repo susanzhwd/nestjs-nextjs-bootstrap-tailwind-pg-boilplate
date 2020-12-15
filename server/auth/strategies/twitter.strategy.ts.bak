@@ -1,0 +1,35 @@
+// import { Injectable } from '@nestjs/common';
+// import { use } from 'passport';
+// import { Strategy as wTwitterTokenStrategy } from 'passport-twitter-token';
+// import { UserService } from '../../user/user.service';
+
+// @Injectable()
+// export class GoogleStrategy {
+//     constructor(
+//         private readonly userService: UserService,
+//     ) {
+//         this.init();
+//     }
+//     init() {
+//         use(
+//             new TwitterTokenStrategy(
+//                 {
+//                     consumerKey: process.env.TWITTER_CONSUMER_KEY,
+//                     consumerSecret: process.env.TWITTER_CONSUMER_SECRET,
+//                 },
+//                 async (
+//                     token: string,
+//                     tokenSecret: string,
+//                     profile: any,
+//                     done: any,
+//                 ) => {
+//                     console.log(111111111, profile)
+//                     const user = await this.userService.findOrCreateSocialUser(
+//                         profile,
+//                     );
+//                     return done(null, user);
+//                 },
+//             ),
+//         );
+//     }
+// }

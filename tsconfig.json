@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "strict": false,
+    "noEmit": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-tw-template"
+      },
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ],
+    "paths": {
+      "@interfaces/*": ["./interfaces/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "interfaces/",
+    "src/typings/*.d.ts",
+    ".eslintrc.js", 
+    "src/components/Layout/Header.jsx",
+    "tailwind.config.js",
+    "postcss.config.js"
+  ],
+  "exclude": ["node_modules"]
+}
